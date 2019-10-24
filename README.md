@@ -2,14 +2,15 @@ First you need to create a Transitioner object containing your original and endi
 
 In Java
 ```java
-Transitioner transition = new Transitioner(
-                   original_view, ending_view,                              
-                   new Transitioner.Callback() {
-                       @Override
-                       public void onPercentChanged(float percent) {                                       
-                           // to do thing with percent change
-                       }
-                   });
+Transitioner transition 
+    = new Transitioner(
+      original_view, ending_view,                              
+      new Transitioner.Callback() {
+          @Override
+          public void onPercentChanged(float percent) {                                       
+              // to do thing with percent change
+          }
+      });
 ```
 In Kotlin
 ```kotlin
