@@ -42,11 +42,11 @@ The view pairs must have matching "tag" attributes so that they can be bound tog
 I recommend you hide the second view layout, since it's only used as a placeholder for the end destination.
 The views can be of any type, you can mix and match them, the two layouts can have a different number of views and nested layouts are 100% supported. The only things to keep in mind are:
 
--  all views which you would want to match together must have the same tag attribute in both layouts
+-  All views which you would want to match together must have the same tag attribute in both layouts
 
--  all unmatched views will remain at their original place inside the original layout
+-  All unmatched views will remain at their original place inside the original layout
 
--  the second layout is just a placeholder. It doesn't hold any logic, it only shows where the original layout should move to.
+-  The second layout is just a placeholder. It doesn't hold any logic, it only shows where the original layout should move to.
 
 ### Additional methods and tweaks
 In Java
