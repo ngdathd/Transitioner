@@ -3,12 +3,12 @@ First you need to create a Transitioner object containing your original and endi
 In Java
 ```java
 Transitioner transition = new Transitioner(original_view, ending_view,                              
-                       new Transitioner.Callback() {
-                           @Override
-                           public void onPercentChanged(float percent) {                                       
-                               // to do thing with percent change
-                           }
-                       });
+                   new Transitioner.Callback() {
+                       @Override
+                       public void onPercentChanged(float percent) {                                       
+                           // to do thing with percent change
+                       }
+                   });
 ```
 In Kotlin
 ```kotlin
@@ -52,6 +52,10 @@ The views can be of any type, you can mix and match them, the two layouts can ha
 In Java
 ```java
 transition.setDuration(500);
+
+transition.setInterpolator(new AccelerateDecelerateInterpolator());
+
+transitioner.animateTo(0f, 500, new BounceInterpolator());
 ```
 In Kotlin
 ```kotlin
