@@ -1,6 +1,6 @@
 <img src="https://github.com/ngdathd/Transitioner/blob/master/preview.gif" width="600">
 
-First you need to create a Transitioner object containing your original and ending views:
+### First you need to create a Transitioner object containing your original and ending views:
 
 In Java
 ```java
